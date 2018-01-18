@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{% block title %}Your Website{% endblock %}</title>
+        <meta name="description" content="A description of your website...">
+        <meta name="author" content="You">
+
+        <!-- TODO: Put your stylesheets here as needed. -->
+        <link rel="stylesheet" type="text/css" href="{% static "blog/css/blog.css" %}">
+    </head>
+    <body>
+        <h1 id="page-header">Your Site Title</h1>
+
+        {% block content %}
+            Your content goes here...
+        {% endblock %}
+
+        <!-- TODO: Put your javascripts here as needed. -->
+        <script src="{% static "blog/js/blog.js" %}"></script>
+    </body>
+</html>
